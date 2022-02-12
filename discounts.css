@@ -1,0 +1,11 @@
+:root{
+    --text-input-field: #F7F7F7;
+    --ch: 12px;
+    --md: 14px;
+    --lg: 16px;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
