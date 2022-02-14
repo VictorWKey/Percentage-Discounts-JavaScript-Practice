@@ -12,24 +12,43 @@
 </head>
 <body>
     <header>
-        <h1>Calculate percentages and discounts</h1>
+        <h1>Calculate discounts</h1>
     </header>
+
     <section>
-        <h2>Calculate the price to pay for your discounted products</h2>
+        <h2>Calculate the price of your products with applied discount</h2>
         <form>
-            <label for="inputPrice">Price:</label>
+            <label for="inputPrice">Price</label>
             <input type="number" name="" id="inputPrice">
 
-            <label for="inputDiscount">Discount:</label>
+            <label for="inputDiscount">Discount</label>
             <input type="number" name="" id="inputDiscount">
 
-            <button type="button" onclick="discountedPriceResult()">Accept</button>
+            <button type="button" onclick="discountedPriceResult()">Calculate</button>
 
             <p id="resultP"></p>
-            
+
         </form>
     </section>
 
+    <section>
+        <h2>Calculate the price of your products with applied coupon</h2>
+        <p>*Coupons: youcan, vicky, cod</p>
+
+        <form>
+            <label for="inputPrice2">Price</label>
+            <input type="number" name="" id="inputPrice2">
+
+            <label for="inputCoupon">Coupon</label>
+            <input type="text" name="" id="inputCoupon">
+
+            <button type="button" onclick="discountedCouponPriceResult()">Calculate</button>
+
+            <p id="couponP"></p>
+            <p id="resultP2"></p>
+
+        </form>
+    </section>
     <script src="./discounts.js"></script>
 </body>
-</html>
+</html> 
