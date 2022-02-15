@@ -11,44 +11,53 @@
     <link rel="stylesheet" href="discounts.css">
 </head>
 <body>
-    <header>
-        <h1>Calculate discounts</h1>
-    </header>
+    <div class="main-container">
+        <header>
+            <h1>Calculate discounts</h1>
+            <h2>Calculate the price of your products with applied discount or coupon</h2>
+        </header>
 
-    <section>
-        <h2>Calculate the price of your products with applied discount</h2>
-        <form>
-            <label for="inputPrice">Price</label>
-            <input type="number" name="" id="inputPrice">
+        <div class="section-container">
+            <section>
+                <h3 class="title title-1">Calculate</h3>
 
-            <label for="inputDiscount">Discount</label>
-            <input type="number" name="" id="inputDiscount">
+                <form>
+                    <label for="inputPrice">Price</label>
+                    <input type="number" name="" id="inputPrice">
+        
+                    <label for="inputDiscount">Discount</label>
+                    <input type="number" name="" id="inputDiscount">
+    
+                    <button type="button" class="calculate-button first-button" onclick="discountedPriceResult()">Calculate</button>  
+                </form>
 
-            <button type="button" onclick="discountedPriceResult()">Calculate</button>
+                <div class="result-container">
+                    <p id="resultP" class="p-result"></p>
+                </div>
+            </section>
+        
+            <section>
+                <h3 class="title title-2">Calculate</h3>
 
-            <p id="resultP"></p>
+                <form>
+                    <label for="inputPrice2">Price</label>
+                    <input type="number" name="" id="inputPrice2">
+        
+                    <label for="inputCoupon">Coupon</label>
+                    <input type="text" class="input-coupon" id="inputCoupon">
+                    <p class="some-coupons">*Coupons: youcan, vicky, cod</p>
+        
+                    <button type="button" class="calculate-button second-button" onclick="discountedCouponPriceResult()">Calculate</button>
+                </form>
+                
+                <div class="result-container">
+                    <p id="couponP" class="p-result coupon-result"></p>
+                    <p id="resultP2" class="p-result"></p>
+                </div>
+            </section>
+        </div>
+    </div>
 
-        </form>
-    </section>
-
-    <section>
-        <h2>Calculate the price of your products with applied coupon</h2>
-        <p>*Coupons: youcan, vicky, cod</p>
-
-        <form>
-            <label for="inputPrice2">Price</label>
-            <input type="number" name="" id="inputPrice2">
-
-            <label for="inputCoupon">Coupon</label>
-            <input type="text" name="" id="inputCoupon">
-
-            <button type="button" onclick="discountedCouponPriceResult()">Calculate</button>
-
-            <p id="couponP"></p>
-            <p id="resultP2"></p>
-
-        </form>
-    </section>
     <script src="./discounts.js"></script>
 </body>
 </html> 
